@@ -41,27 +41,27 @@
                 >Commands <span class="caret"></span
               ></a>
               <ul class="dropdown-menu">
-                <li class="active">
+                <li data-test="Querying" class="active">
                   <a href="/commands/querying">Querying</a>
                 </li>
-                <li><a href="/commands/traversal">Traversal</a></li>
-                <li><a href="/commands/actions">Actions</a></li>
-                <li><a href="/commands/window">Window</a></li>
-                <li><a href="/commands/viewport">Viewport</a></li>
-                <li><a href="/commands/location">Location</a></li>
-                <li><a href="/commands/navigation">Navigation</a></li>
-                <li><a href="/commands/assertions">Assertions</a></li>
-                <li><a href="/commands/misc">Misc</a></li>
-                <li><a href="/commands/connectors">Connectors</a></li>
-                <li><a href="/commands/aliasing">Aliasing</a></li>
-                <li><a href="/commands/waiting">Waiting</a></li>
-                <li>
+                <li data-test="Traversal"><a href="/commands/traversal">Traversal</a></li>
+                <li data-test="Actions"><a href="/commands/actions">Actions</a></li>
+                <li data-test="Window"><a href="/commands/window">Window</a></li>
+                <li data-test="Viewport"><a href="/commands/viewport">Viewport</a></li>
+                <li data-test="Location"><a href="/commands/location">Location</a></li>
+                <li data-test="Navigation"><a href="/commands/navigation">Navigation</a></li>
+                <li data-test="Assertions"><a href="/commands/assertions">Assertions</a></li>
+                <li data-test="Misc"><a href="/commands/misc">Misc</a></li>
+                <li data-test="Connectors"><a href="/commands/connectors">Connectors</a></li>
+                <li data-test="Aliasing"><a href="/commands/aliasing">Aliasing</a></li>
+                <li data-test="Waiting"><a href="/commands/waiting">Waiting</a></li>
+                <li data-test="Network Requests">
                   <a href="/commands/network-requests">Network Requests</a>
                 </li>
-                <li><a href="/commands/files">Files</a></li>
-                <li><a href="/commands/local-storage">Local Storage</a></li>
-                <li><a href="/commands/cookies">Cookies</a></li>
-                <li>
+                <li data-test="Files"><a href="/commands/files">Files</a></li>
+                <li data-test="Local Storage"><a href="/commands/local-storage">Local Storage</a></li>
+                <li data-test="Cookies"><a href="/commands/cookies">Cookies</a></li>
+                <li data-test="Spies">
                   <a href="/commands/spies-stubs-clocks"
                     >Spies, Stubs &amp; Clocks</a
                   >
@@ -105,7 +105,7 @@
       <div id="querying">
         <div class="row">
           <div class="col-xs-7">
-            <h4 id="get"><a href="https://on.cypress.io/get">cy.get()</a></h4>
+            <h4 id="get"><a data-test="Querying" href="https://on.cypress.io/get">cy.get()</a></h4>
             <p>
               To query for the button, use the
               <a href="https://on.cypress.io/get"><code>cy.get()</code></a>
@@ -115,7 +115,7 @@
 
           <div class="col-xs-5">
             <div class="well">
-              <button id="query-btn" class="query-btn btn btn-primary">
+              <button data-test="btn test" id="query-btn" class="query-btn btn btn-primary">
                 Button
               </button>
             </div>
@@ -160,7 +160,7 @@
 
         <div class="row">
           <div class="col-xs-7">
-            <h4 id="contains"><a href="https://on.cypress.io/contains">cy.contains()</a></h4>
+            <h4 id="contains"><a data-test="Querying" href="https://on.cypress.io/contains">cy.contains()</a></h4>
             <p>
               We can find elements by their content using
               <a href="https://on.cypress.io/contains"
@@ -177,7 +177,7 @@
                 <li class="fourth">more apples</li>
               </ul>
               <div class="query-button">
-                <button class="btn btn-default"><span>Save Form</span></button>
+                <button data-test="btn test" class="btn btn-default"><span>Save Form</span></button>
               </div>
             </div>
           </div>
@@ -185,7 +185,7 @@
           <div class="col-xs-12"><hr /></div>
 
           <div class="col-xs-7">
-            <h4 id="within"><a href="https://on.cypress.io/within">.within()</a></h4>
+            <h4 id="within"><a data-test="Querying" href="https://on.cypress.io/within">.within()</a></h4>
             <p>
               We can find elements within a specific DOM element
               <a href="https://on.cypress.io/within"><code>.within()</code></a>
@@ -220,7 +220,7 @@
           <div class="col-xs-12"><hr /></div>
 
           <div class="col-xs-7">
-            <h4 id="root"><a href="https://on.cypress.io/root">cy.root()</a></h4>
+            <h4 id="root"><a data-test="Querying" href="https://on.cypress.io/root">cy.root()</a></h4>
             <p>
               We can find the root DOM element<a
                 href="https://on.cypress.io/root"
@@ -243,7 +243,7 @@
 
         <div class="row">
           <div class="col-xs-7">
-            <h4 id="best-practices"><a href="https://on.cypress.io/best-practices#Selecting-Elements">Best Practices: Selecting elements</a></h4>
+            <h4 id="best-practices"><a data-test="Querying" href="https://on.cypress.io/best-practices#Selecting-Elements">Best Practices: Selecting elements</a></h4>
             <p>
               Prefer dedicated <code>data-cy</code> or <code>data-test</code> attributes to CSS class names and element IDs.
               See detailed discussion at <a href="https://on.cypress.io/best-practices#Selecting-Elements">Best Practices: Selecting elements</a>
@@ -252,7 +252,7 @@
 
           <div class="col-xs-5">
             <div class="well" data-cy="best-practices-selecting-elements">
-              <button id="main" class="btn btn-large" name="submission" role="button" data-cy="submit">Submit</button>
+              <button data-test="btn test" id="main" class="btn btn-large" name="submission" role="button" data-cy="submit">Submit</button>
             </div>
           </div>
         </div>

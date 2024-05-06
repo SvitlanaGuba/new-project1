@@ -31,23 +31,23 @@
           <li class="active" class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Commands <span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="/commands/querying">Querying</a></li>
-              <li><a href="/commands/traversal">Traversal</a></li>
-              <li class="active"><a href="/commands/actions">Actions</a></li>
-              <li><a href="/commands/window">Window</a></li>
-              <li><a href="/commands/viewport">Viewport</a></li>
-              <li><a href="/commands/location">Location</a></li>
-              <li><a href="/commands/navigation">Navigation</a></li>
-              <li><a href="/commands/assertions">Assertions</a></li>
-              <li><a href="/commands/misc">Misc</a></li>
-              <li><a href="/commands/connectors">Connectors</a></li>
-              <li><a href="/commands/aliasing">Aliasing</a></li>
-              <li><a href="/commands/waiting">Waiting</a></li>
-              <li><a href="/commands/network-requests">Network Requests</a></li>
-              <li><a href="/commands/files">Files</a></li>
-              <li><a href="/commands/local-storage">Local Storage</a></li>
-              <li><a href="/commands/cookies">Cookies</a></li>
-              <li><a href="/commands/spies-stubs-clocks">Spies, Stubs &amp; Clocks</a></li>
+              <li data-test="Querying"><a href="/commands/querying">Querying</a></li>
+              <li data-test="Traversal"><a href="/commands/traversal">Traversal</a></li>
+              <li class="active"> <a data-test="Actions" href="/commands/actions">Actions</a></li>
+              <li data-test="Window"><a href="/commands/window">Window</a></li>
+              <li data-test="Viewport"><a href="/commands/viewport">Viewport</a></li>
+              <li data-test="Location"><a href="/commands/location">Location</a></li>
+              <li data-test="Navigation"><a href="/commands/navigation">Navigation</a></li>
+              <li data-test="Assertions"><a href="/commands/assertions">Assertions</a></li>
+              <li data-test="Misc"><a href="/commands/misc">Misc</a></li>
+              <li data-test="Connectors"><a href="/commands/connectors">Connectors</a></li>
+              <li data-test="Aliasing"><a href="/commands/aliasing">Aliasing</a></li>
+              <li data-test="Waiting"><a href="/commands/waiting">Waiting</a></li>
+              <li data-test="Network Requests"><a href="/commands/network-requests">Network Requests</a></li>
+              <li data-test="Files"><a href="/commands/files">Files</a></li>
+              <li data-test="Local Storage"><a href="/commands/local-storage">Local Storage</a></li>
+              <li data-test="Cookies"><a href="/commands/cookies">Cookies</a></li>
+              <li data-test="Spies"><a href="/commands/spies-stubs-clocks">Spies, Stubs &amp; Clocks</a></li>
             </ul>
           </li>
           <li><a href="/utilities">Utilities</a></li>
@@ -72,8 +72,8 @@
       <div class="row">
 
         <div class="col-xs-7">
-          <h4 id="type"><a href="https://on.cypress.io/type">.type()</a></h4>
-          <p>To type into a DOM element, use the <a href="https://on.cypress.io/type"><code>.type()</code></a> command.</p>
+          <h4 id="type"><a data-test="Actions" href="https://on.cypress.io/type">.type()</a></h4>
+          <p>To type into a DOM element, use the <a data-test="Actions" href="https://on.cypress.io/type"><code>.type()</code></a> command.</p>
         </div>
         <div class="col-xs-5">
           <div class="well">
@@ -93,8 +93,8 @@
         <div class="col-xs-12"><hr></div>
 
         <div class="col-xs-7">
-          <h4 id="focus"><a href="https://on.cypress.io/focus">.focus()</a></h4>
-          <p>To focus on a DOM element, use the <a href="https://on.cypress.io/focus"><code>.focus()</code></a> command.</p>
+          <h4 id="focus"><a data-test="Actions" href="https://on.cypress.io/focus">.focus()</a></h4>
+          <p>To focus on a DOM element, use the <a data-test="Actions" href="https://on.cypress.io/focus"><code>.focus()</code></a> command.</p>
         </div>
         <div class="col-xs-5">
           <div class="well">
@@ -110,8 +110,8 @@
         <div class="col-xs-12"><hr></div>
 
         <div class="col-xs-7">
-          <h4 id="blur"><a href="https://on.cypress.io/blur">.blur()</a></h4>
-          <p>To blur on a DOM element, use the <a href="https://on.cypress.io/blur"><code>.blur()</code></a> command.</p>
+          <h4 id="blur"><a data-test="Actions" href="https://on.cypress.io/blur">.blur()</a></h4>
+          <p>To blur on a DOM element, use the <a data-test="Actions" href="https://on.cypress.io/blur"><code>.blur()</code></a> command.</p>
         </div>
         <div class="col-xs-5">
           <div class="well">
@@ -127,8 +127,8 @@
         <div class="col-xs-12"><hr></div>
 
         <div class="col-xs-7">
-          <h4 id="clear"><a href="https://on.cypress.io/clear">.clear()</a></h4>
-          <p>To clear on a DOM element, use the <a href="https://on.cypress.io/clear"><code>.clear()</code></a> command.</p>
+          <h4 id="clear"><a data-test="Actions" href="https://on.cypress.io/clear">.clear()</a></h4>
+          <p>To clear on a DOM element, use the <a data-test="Actions" href="https://on.cypress.io/clear"><code>.clear()</code></a> command.</p>
         </div>
         <div class="col-xs-5">
           <div class="well">
@@ -144,8 +144,8 @@
         <div class="col-xs-12"><hr></div>
 
         <div class="col-xs-7">
-          <h4 id="submit"><a href="https://on.cypress.io/submit">.submit()</a></h4>
-          <p>To submit a form, use the <a href="https://on.cypress.io/submit"><code>cy.submit()</code></a> command.</p>
+          <h4 id="submit"><a data-test="Actions" href="https://on.cypress.io/submit">.submit()</a></h4>
+          <p>To submit a form, use the <a data-test="Actions" href="https://on.cypress.io/submit"><code>cy.submit()</code></a> command.</p>
         </div>
         <div class="col-xs-5">
           <div class="well">
@@ -162,8 +162,8 @@
         <div class="col-xs-12"><hr></div>
 
         <div class="col-xs-7">
-          <h4 id="click"><a href="https://on.cypress.io/click">.click()</a></h4>
-          <p>To click a DOM element, use the <a href="https://on.cypress.io/click"><code>.click()</code></a> command.</p>
+          <h4 id="click"><a data-test="Actions" href="https://on.cypress.io/click">.click()</a></h4>
+          <p>To click a DOM element, use the <a data-test="Actions" href="https://on.cypress.io/click"><code>.click()</code></a> command.</p>
         </div>
         <div class="col-xs-5">
           <div class="well">
@@ -196,8 +196,8 @@
         <div class="col-xs-12"><hr></div>
 
         <div class="col-xs-7">
-          <h4 id="dblclick"><a href="https://on.cypress.io/dblclick">.dblclick()</a></h4>
-          <p>To double click a DOM element, use the <a href="https://on.cypress.io/dblclick"><code>.dblclick()</code></a> command.</p>
+          <h4 id="dblclick"><a data-test="Actions" href="https://on.cypress.io/dblclick">.dblclick()</a></h4>
+          <p>To double click a DOM element, use the <a data-test="Actions" href="https://on.cypress.io/dblclick"><code>.dblclick()</code></a> command.</p>
         </div>
         <div class="col-xs-5">
           <div class="well">
@@ -213,8 +213,8 @@
         <div class="col-xs-12"><hr></div>
 
         <div class="col-xs-7">
-          <h4 id="rightclick"><a href="https://on.cypress.io/rightclick">.rightclick()</a></h4>
-          <p>To right click a DOM element, use the <a href="https://on.cypress.io/rightclick"><code>.rightclick()</code></a>
+          <h4 id="rightclick"><a data-test="Actions" href="https://on.cypress.io/rightclick">.rightclick()</a></h4>
+          <p>To right click a DOM element, use the <a data-test="Actions" href="https://on.cypress.io/rightclick"><code>.rightclick()</code></a>
             command.</p>
         </div>
         <div class="col-xs-5">
@@ -233,8 +233,8 @@
         </div>
 
         <div class="col-xs-7">
-          <h4 id="check"><a href="https://on.cypress.io/check">.check()</a></h4>
-          <p>To check a checkbox or radio, use the <a href="https://on.cypress.io/check"><code>.check()</code></a> command.</p>
+          <h4 id="check"><a data-test="Actions" href="https://on.cypress.io/check">.check()</a></h4>
+          <p>To check a checkbox or radio, use the <a data-test="Actions" href="https://on.cypress.io/check"><code>.check()</code></a> command.</p>
         </div>
         <div class="col-xs-5">
           <div class="well">
@@ -310,8 +310,8 @@
         <div class="col-xs-12"><hr></div>
 
         <div class="col-xs-7">
-          <h4 id="uncheck"><a href="https://on.cypress.io/uncheck">.uncheck()</a></h4>
-          <p>To uncheck a checkbox or radio, use the <a href="https://on.cypress.io/uncheck"><code>.uncheck()</code></a> command.</p>
+          <h4 id="uncheck"><a data-test="Actions" href="https://on.cypress.io/uncheck">.uncheck()</a></h4>
+          <p>To uncheck a checkbox or radio, use the <a data-test="Actions" href="https://on.cypress.io/uncheck"><code>.uncheck()</code></a> command.</p>
         </div>
         <div class="col-xs-5">
           <div class="well">
@@ -341,8 +341,8 @@
         <div class="col-xs-12"><hr></div>
 
         <div class="col-xs-7">
-          <h4 id="select"><a href="https://on.cypress.io/select">.select()</a></h4>
-          <p>To select an option in a <code>select</code>, use the <a href="https://on.cypress.io/select"><code>.select()</code></a> command.</p>
+          <h4 id="select"><a data-test="Actions" href="https://on.cypress.io/select">.select()</a></h4>
+          <p>To select an option in a <code>select</code>, use the <a data-test="Actions" href="https://on.cypress.io/select"><code>.select()</code></a> command.</p>
         </div>
         <div class="col-xs-5">
           <div class="well">
@@ -366,8 +366,8 @@
         <div class="col-xs-12"><hr></div>
 
         <div class="col-xs-7">
-          <h4 id="scrollIntoView"><a href="https://on.cypress.io/scrollintoview">.scrollIntoView()</a></h4>
-          <p>To scroll an element into view, use the <a href="https://on.cypress.io/scrollintoview"><code>.scrollintoview()</code></a> command.</p>
+          <h4 id="scrollIntoView"><a data-test="Actions" href="https://on.cypress.io/scrollintoview">.scrollIntoView()</a></h4>
+          <p>To scroll an element into view, use the <a data-test="Actions" href="https://on.cypress.io/scrollintoview"><code>.scrollintoview()</code></a> command.</p>
         </div>
         <div class="col-xs-5">
           <div class="well">
@@ -397,8 +397,8 @@
         <div class="col-xs-12"><hr></div>
 
         <div class="col-xs-7">
-          <h4 id="scrollTo"><a href="https://on.cypress.io/scrollto">cy.scrollTo()</a></h4>
-          <p>To scroll the window or a scrollable element to a specific position, use the <a href="https://on.cypress.io/scrollto"><code>cy.scrollTo()</code></a> command.</p>
+          <h4 id="scrollTo"><a data-test="Actions" href="https://on.cypress.io/scrollto">cy.scrollTo()</a></h4>
+          <p>To scroll the window or a scrollable element to a specific position, use the <a data-test="Actions" href="https://on.cypress.io/scrollto"><code>cy.scrollTo()</code></a> command.</p>
         </div>
         <div class="col-xs-5">
           <div class="well">
@@ -499,8 +499,8 @@
         <div class="col-xs-12"><hr></div>
 
         <div class="col-xs-7">
-          <h4 id="trigger"><a href="https://on.cypress.io/trigger">.trigger()</a></h4>
-          <p>To trigger an event on a DOM element, use the <a href="https://on.cypress.io/trigger"><code>.trigger()</code></a> command.</p>
+          <h4 id="trigger"><a data-test="Actions" href="https://on.cypress.io/trigger">.trigger()</a></h4>
+          <p>To trigger an event on a DOM element, use the <a data-test="Actions" href="https://on.cypress.io/trigger"><code>.trigger()</code></a> command.</p>
         </div>
         <div class="col-xs-5">
           <div class="well">
